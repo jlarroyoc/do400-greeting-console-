@@ -24,8 +24,8 @@ pipeline{
 	stage('Release') {
 	    steps {
 	        sh '''
-         	     oc project obdzis-greetings
-       	             oc start-build greeting-console  --follow --wait
+	       	    oc project obdzis-greetings
+       	            oc start-build greeting-console  --follow --wait
 	        '''
 	    }
 	}
